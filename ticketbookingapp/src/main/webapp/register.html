@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>TICKET:BOOIKNG</title>
+  </head>
+  <style>
+   nav{
+    display: flex;
+    justify-content: end;
+   }
+  </style>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top-fiexd">
+            <a class="navbar-brand" href=""> <a class="navbar-brand" href="#">
+                <img src="https://www.svgrepo.com/show/289374/access-ticket.svg" alt="logo" width="100"
+                    height="70" class="d-inline-block align-text"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>            
+          </nav>
+    </header>
+<main>
+    <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="https://i.pinimg.com/originals/95/c4/32/95c432ec12a48c48e6ba23ba8fd26311.gif"
+                      alt="Sample photo" class="h-100 w-100"
+                      style="border-top-left-radius: .25rem; border-bottom-left-radius: .35rem;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase" style="font-style: italic; align-items: center;">Registration form</h3>
+                      <form action="RegisterServlet">
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="name" name="name" class="form-control form-control-lg" required />
+                              <label class="form-label" for="name">First name</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="lastname" name="lastname" class="form-control form-control-lg" required />
+                              <label class="form-label" for="lastname">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="row">
+                          <div class="col-md-12 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="username" name="username" class="form-control form-control-lg" required />
+                              <label class="form-label" for="username">username</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="number" id="age" name="age" class="form-control form-control-lg" required />
+                          <label class="form-label" for="age">Age</label>
+                        </div>
+                         <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+      
+                          <h6 class="mb-0 me-4">Gender: </h6>
+      
+                        <h6 class="mb-0 me-4">Gender: </h6>
+    <div class="form-check form-check-inline mb-0 me-4">
+        <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="female" required />
+        <label class="form-check-label" for="femaleGender">Female</label>
+    </div>
+    <div class="form-check form-check-inline mb-0 me-4">
+        <input class="form-check-input" type="radio" name="gender" id="maleGender" value="male" required />
+        <label class="form-check-label" for="maleGender">Male</label>
+    </div>
+    <div class="form-check form-check-inline mb-0">
+        <input class="form-check-input" type="radio" name="gender" id="otherGender" value="other" required />
+        <label class="form-check-label" for="otherGender">Other</label>
+    </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <select class="select" id="stateSelect" name="stateSelect" required>
+                              <option value="">State</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-4" >
+                            <select class="select" id="citySelect" name="citySelect" required>
+                              <option value="">City</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <input type="text" id="Contactnumber" name="Contactnumber" class="form-control form-control-lg" required />
+                          <label class="form-label" for="Contactnumber">Contact number</label>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <input type="text" id="Alternativecontactnumber" name="Alternativecontactnumber" class="form-control form-control-lg" required />
+                          <label class="form-label" for="Alternativecontactnumber">Alternative contact number</label>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <input type="text" id="email" name="email"  class="form-control form-control-lg" required />
+                          <label class="form-label" for="email">Email ID</label>
+                        </div>
+      
+                        <div class="d-flex justify-content-end pt-3">
+                          <button type="submit" class="btn btn-warning btn-lg ms-2" onclick="submitForm()">Register</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</main>
+   <script>
+     var indianCities = {
+    "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Rajahmundry", "Tirupati", "Kadapa", "Kakinada", "Anantapur"],
+    "Arunachal Pradesh": ["Itanagar", "Naharlagun", "Tawang", "Along", "Pasighat", "Roing", "Ziro", "Bomdila", "Aalo", "Tezu"],
+    "Assam": ["Guwahati", "Dibrugarh", "Silchar", "Jorhat", "Nagaon", "Tinsukia", "Bongaigaon", "Tezpur", "Barpeta", "Lakhimpur"],
+    "Bihar": ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Purnia", "Darbhanga", "Arrah", "Begusarai", "Katihar", "Chhapra"],
+    "Chhattisgarh": ["Raipur", "Bhilai", "Bilaspur", "Korba", "Raigarh", "Durg", "Rajnandgaon", "Jagdalpur", "Ambikapur", "Chirmiri"],
+    "Goa": ["Panaji", "Vasco da Gama", "Margao", "Mapusa", "Ponda", "Bicholim", "Curchorem", "Sanquelim", "Cuncolim", "Valpoi"],
+    "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Junagadh", "Gandhinagar", "Nadiad", "Mehsana"],
+    "Haryana": ["Faridabad", "Gurgaon", "Panipat", "Ambala", "Yamunanagar", "Rohtak", "Hisar", "Karnal", "Sonipat", "Panchkula"],
+    "Himachal Pradesh": ["Shimla", "Mandi", "Solan", "Dharamshala", "Kullu", "Baddi", "Nahan", "Una", "Palampur", "Hamirpur"],
+    "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad", "Bokaro Steel City", "Deoghar", "Phusro", "Hazaribagh", "Giridih", "Ramgarh", "Medininagar"],
+    "Karnataka": ["Bangalore", "Hubli-Dharwad", "Mysore", "Gulbarga", "Belgaum", "Mangalore", "Davanagere", "Bellary", "Shimoga", "Tumkur"],
+    "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode", "Kollam", "Thrissur", "Palakkad", "Alappuzha", "Kannur", "Kottayam", "Manjeri"],
+    "Madhya Pradesh": ["Indore", "Bhopal", "Jabalpur", "Gwalior", "Ujjain", "Sagar", "Dewas", "Satna", "Ratlam", "Rewa"],
+    "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Kalyan-Dombivli", "Vasai-Virar", "Aurangabad", "Navi Mumbai", "Solapur"],
+    "Manipur": ["Imphal", "Thoubal", "Bishnupur", "Kakching", "Senapati", "Ukhrul", "Churachandpur", "Chandel", "Tamenglong", "Noney"],
+    "Meghalaya": ["Shillong", "Tura", "Nongstoin", "Williamnagar", "Nongpoh", "Jowai", "Baghmara", "Amlarem", "Resubelpara", "Mairang"],
+    "Mizoram": ["Aizawl", "Lunglei", "Saiha", "Champhai", "Serchhip", "Kolasib", "Lawngtlai", "Mamit", "Khawzawl", "Hnahthial"],
+    "Nagaland": ["Kohima", "Dimapur", "Mokokchung", "Tuensang", "Wokha", "Zunheboto", "Phek", "Chumukedima", "Changtongya", "Longleng"],
+    "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela", "Brahmapur", "Sambalpur", "Puri", "Baleshwar", "Baripada", "Bhadrak", "Balangir"],
+    "Punjab": ["Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Hoshiarpur", "Mohali", "Batala", "Pathankot", "Moga"],
+    "Rajasthan": ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer", "Udaipur", "Bhilwara", "Alwar", "Bharatpur", "Sikar"],
+    "Sikkim": ["Gangtok", "Namchi", "Mangan", "Gyalshing", "Singtam", "Rangpo", "Soreng", "Jorethang", "Yuksam", "Ravangla"],
+    "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Tiruppur", "Salem", "Erode", "Tirunelveli", "Vellore", "Thoothukudi"],
+    "Telangana": ["Hyderabad", "Warangal", "Nizamabad", "Khammam", "Karimnagar", "Ramagundam", "Mahbubnagar", "Nalgonda", "Adilabad", "Suryapet"],
+    "Tripura": ["Agartala", "Udaipur", "Dharmanagar", "Kailasahar", "Belonia", "Teliamura", "Khowai", "Ambassa", "Kamalpur", "Sonamura"],
+    "Uttar Pradesh": ["Lucknow", "Kanpur", "Ghaziabad", "Agra", "Varanasi", "Meerut", "Allahabad", "Bareilly", "Aligarh", "Moradabad"],       
+    };
+
+   var stateSelect = document.getElementById('stateSelect');
+    var citySelect = document.getElementById('citySelect');
+
+    // Populate states dropdown
+    Object.keys(indianCities).forEach(function(state) {
+        var option = document.createElement('option');
+        option.value = state;
+        option.text = state;
+        stateSelect.appendChild(option);
+    });
+
+    // Function to populate cities based on selected state
+    function populateCities(selectedState) {
+        citySelect.innerHTML = '<option value="">City</option>'; // Reset city dropdown
+        var cities = indianCities[selectedState];
+        if (cities) {
+            cities.forEach(function(city) {
+                var option = document.createElement('option');
+                option.value = city;
+                option.text = city;
+                citySelect.appendChild(option);
+            });
+        }
+    }
+
+    // Event listener for state selection
+    stateSelect.addEventListener('change', function() {
+        var selectedState = stateSelect.value;
+        populateCities(selectedState);
+    });
+
+    // Function to handle form submission
+    function submitForm() {
+        var selectedState = stateSelect.options[stateSelect.selectedIndex].text;
+        var selectedCity = citySelect.options[citySelect.selectedIndex].text;
+        console.log("Selected State:", selectedState);
+        console.log("Selected City:", selectedCity);
+        // Here, you can send the selected state and city to the backend
+    }
+   </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
